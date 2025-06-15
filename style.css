@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(102, 194, 175, 0.35);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    background-color: #232931;
+    color:#fff;
+    border-radius: 25px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 1rem;
+}
+
+.img_secion{
+    border-radius: 25px;
+    background-image: url(bg.jpg) ;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ transform: scale(1.03) perspective(200px);
+}
+
+.img_secion::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg, #5c6bce 10%, #0d47a1 100%);
+    opacity: 0.5;
+    z-index: -1;
+    border-radius:25px ;
+
+
+
+}
+
+.default_info{
+    padding: 48px;
+    text-align: center;
+}
+
+.default_info img {
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.default_info h2{
+    font-size: 48px;
+}
+
+.default_info h3{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+
+.weather_temp{
+    font-size:64px;
+    font-weight: 800;
+
+}
+
+.content_section{
+    padding:1.5rem
+
+}
+.content_section form {
+    margin: 1.5rem  0;
+    position: relative;
+}
+
+.content_section form input{
+    width:87.9%;
+    outline: none;
+    background: transparent;
+    border: 1px solid #37474f;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-family: inherit;
+    color: #fff;
+    font-size: 16px;
+
+
+}
+
+.content_section form button{
+    position: absolute;
+    top:0;
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0.84rem 0.6rem ;
+    font-family:inherit;
+    font-size: 0.8rem ;
+    outline: none;
+    border: none;
+    background: #5c6bc0;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.day_info .content{
+    display: flex;
+    justify-content:space-between;
+    padding:0.4rem 0;
+
+}
+
+
+.day_info .container .title {
+    font-weight: 400;
+}
+
+.list_content ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 3rem 0rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+
+
+}
+
+.list_content ul li{
+    padding: 0.5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem ;
+    transition: all 0.3s ease-in;
+
+}
+
+.list_content ul li:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #222931;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+
+}
+
+.list_content ul li img{
+    width: 50%;
+object-fit: cover;
+
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,9 +18,9 @@
                     <h2 class="default_day">Sunday</h2>
                     <span class="default_date">9 june 2025</span>
                     <div class="icons">
-                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
-                        <h2 class="weather_temp">22 &degC</h2>
-                        <h3 class="cloudtxt">Overcast clouds</h3>
+                        <img   class="weather_icon">
+                        <h2 class="weather_temp"></h2>
+                        <h3 class="cloudtxt"></h3>
                     </div>
                 </div>
             </div>
@@ -29,46 +30,55 @@
                     <button type="submit" class="btn_search">Search</button>
                 </form>
                 <div class="day_info">
-                    <div class="content">
-                        <p class="title">Name</p>
-                        <span class="value">Azebaijan</span>
+                    <div class="currentData">
+                        <div class="content">
+                            <p class="title">Name</p>
+                            <span class="value"></span>
+                        </div>
+                        <div class="content">
+                            <p class="title">temp</p>
+                            <span class="value"></span>
+                        </div>
+                        <div class="content">
+                            <p class="title">Humidity</p>
+                            <span class="value"></span>
+                        </div>
+                        <div class="content">
+                            <p class="title">Wind Speed</p>
+                            <span class="value"></span>
+                        </div>
+                        
                     </div>
-                    <div class="content">
-                        <p class="title">temp</p>
-                        <span class="value">23&degC</span>
-                    </div>
-                    <div class="content">
-                        <p class="title">Humidity</p>
-                        <span class="value">2%</span>
-                    </div>
-                    <div class="content">
-                        <p class="title">Wind Speed</p>
-                        <span class="value">2km/h</span>
-                    </div>
+
 
                     <div class="list_content">
                         <ul>
                             <li>
-                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
-                                <span>Sat</span>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" class="week_img">
+                                <span class="week_day">Sat</span>
                                 <span class="day_temp">23&degC</span>
                             </li>
                             <li>
-                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
-                                <span>Sat</span>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" class="week_img">
+                                <span class="week_day">Sat</span>
                                 <span class="day_temp">23&degC</span>
                             </li>
                             <li>
-                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
-                                <span>Sat</span>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" class="week_img">
+                                <span class="week_day">Sat</span>
                                 <span class="day_temp">23&degC</span>
                             </li>
                             <li>
-                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
-                                <span>Sat</span>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" class="week_img">
+                                <span class="week_day">Sat</span>
                                 <span class="day_temp">23&degC</span>
                             </li>
-                        
+                            <li>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" class="week_img">
+                                <span class="week_day">Sat</span>
+                                <span class="day_temp">23&degC</span>
+                            </li>
+
                         </ul>
 
                     </div>
